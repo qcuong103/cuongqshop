@@ -15,14 +15,10 @@ namespace CuongqShop.Data.infrastructure
             return dbContext ?? (dbContext = new CuongqShopDbContext());
         }
 
-        //public CuongqShopDbContext init()
-        //{
-        //    return dbContext ?? (dbContext = new CuongqShopDbContext());
-        //}
-
         protected override void DisposeCore()
         {
-            if (dbContext != null) { dbContext.Dispose(); }
+            if (dbContext != null)
+                dbContext.Dispose();
         }
     }
 }

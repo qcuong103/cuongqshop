@@ -23,7 +23,7 @@ namespace CuonqShop.Model.Models
         [Required]
         public int GroupID { set; get; }
 
-        [ForeignKey("GroundID")]
+        [ForeignKey("GroupID")]
         public virtual MenuGroup MenuGroup { set; get; }
 
         [MaxLength(10)]

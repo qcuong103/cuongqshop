@@ -9,17 +9,21 @@ using System.Threading.Tasks;
 namespace CuonqShop.Model.Models
 {
     [Table("PostTags")]
-    public class PostTags
+    public class PostTag
     {
         [Key]
-        public int PostID { get; set; }
+        [Column(Order = 1)]
+        public int PostID { set; get; }
+
         [Key]
-        public string TagsID { get; set; }
+        [Column(TypeName = "varchar", Order = 2)]
+        [MaxLength(50)]
+        public string TagID { set; get; }
 
         [ForeignKey("PostID")]
-        public virtual Post Post { get; set; }
+        public virtual Post Post { set; get; }
 
-        [ForeignKey("TagsID")]
-        public virtual Tag Tags { get; set; }
+        [ForeignKey("TagID")]
+        public virtual Tag Tag { set; get; }
     }
 }

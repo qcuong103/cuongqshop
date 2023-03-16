@@ -37,7 +37,6 @@ namespace CuonqShop.Model.Models
 
         public DateTime? CreatedDate { get; set; }
         public string CreatedBy { get; set; }
-        //public string PaymentMethod { get; set; }
         public string PaymentStatus { get; set; }
         public bool Status { get; set; }
 

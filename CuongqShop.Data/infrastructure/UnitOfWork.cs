@@ -16,7 +16,8 @@ namespace CuongqShop.Data.infrastructure
             this.dbFactoty = dbFactoty;
         }
 
-        public CuongqShopDbContext DbContext { 
+        public CuongqShopDbContext DbContext 
+        { 
             get { return dbContext ?? (dbFactoty.Init()); } 
         }
 

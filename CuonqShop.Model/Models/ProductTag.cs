@@ -12,17 +12,18 @@ namespace CuonqShop.Model.Models
     public class ProductTag
     {
         [Key]
-        public int ProductID { get; set; }
+        [Column(Order = 1)]
+        public int ProductID { set; get; }
 
         [Key]
-        [Column(TypeName = "varchar")]
+        [Column(TypeName = "varchar", Order = 2)]
         [MaxLength(50)]
-        public string TagsID { get; set; }
+        public string TagID { set; get; }
 
         [ForeignKey("ProductID")]
-        public virtual Product Product { get; set; }
+        public virtual Product Product { set; get; }
 
-        [ForeignKey("TagsID")]
-        public virtual Tag Tag { get; set; }
+        [ForeignKey("TagID")]
+        public virtual Tag Tag { set; get; }
     }
 }
