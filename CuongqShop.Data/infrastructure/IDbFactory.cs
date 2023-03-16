@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CuongqShop.Data.Infastructure
+namespace CuongqShop.Data.infrastructure
 {
-    internal interface IUnitOfWork
+    public interface IDbFactory : IDisposable
     {
+        CuongqShopDbContext Init();
     }
 }
