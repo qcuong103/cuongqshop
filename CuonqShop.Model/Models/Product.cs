@@ -39,7 +39,7 @@ namespace CuonqShop.Model.Models
         [ForeignKey("CategoryID")]
         public virtual ProductCategory ProductCategory { get; set; }
 
-        public virtual IEnumerable<ProductTags> ProductsTags { get; set; }
+        public virtual IEnumerable<ProductTag> ProductsTags { get; set; }
 
         public virtual IEnumerable<OrderDetail> OrderDetails { get; set; }
     }

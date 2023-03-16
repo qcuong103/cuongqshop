@@ -48,6 +48,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CuongqShopDbContext.cs" />
+    <Compile Include="infrastructure\DbFactory.cs" />
+    <Compile Include="infrastructure\Disposable.cs" />
+    <Compile Include="infrastructure\IDbFactory.cs" />
+    <Compile Include="infrastructure\IRepository.cs" />
+    <Compile Include="infrastructure\IUnitOfWork.cs" />
+    <Compile Include="infrastructure\RepositoryBase.cs" />
+    <Compile Include="infrastructure\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +67,13 @@
       <Project>{94188b44-f2fd-4586-9849-631bf613c122}</Project>
       <Name>CuongqShop.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CuonqShop.Model\CuongqShop.Model.csproj">
+      <Project>{4b38d1fd-47c4-4684-b42f-ff6ae3c03c2e}</Project>
+      <Name>CuongqShop.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

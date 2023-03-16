@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CuonqShop.Model.Models
 {
     [Table("Menus")]
-    internal class Menu
+    public class Menu
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

@@ -20,6 +20,6 @@ namespace CuonqShop.Model.Models
         public virtual Post Post { get; set; }
 
         [ForeignKey("TagsID")]
-        public virtual Tags Tags { get; set; }
+        public virtual Tag Tags { get; set; }
     }
 }

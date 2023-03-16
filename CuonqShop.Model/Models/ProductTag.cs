@@ -23,6 +23,6 @@ namespace CuonqShop.Model.Models
         public virtual Product Product { get; set; }
 
         [ForeignKey("TagsID")]
-        public virtual Tags Tag { get; set; }
+        public virtual Tag Tag { get; set; }
     }
 }
