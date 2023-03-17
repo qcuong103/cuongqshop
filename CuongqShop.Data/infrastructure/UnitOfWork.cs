@@ -9,7 +9,7 @@ namespace CuongqShop.Data.infrastructure
     public class UnitOfWork : IUnitOfWork
     {
         private readonly IDbFactory dbFactoty;
-        private CuongqShopDbContext dbContext;
+        private readonly CuongqShopDbContext dbContext;
 
         public UnitOfWork(IDbFactory dbFactoty)
         {

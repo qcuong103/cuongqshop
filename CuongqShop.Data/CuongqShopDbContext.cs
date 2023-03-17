@@ -7,12 +7,6 @@ using System.Data.Entity.Validation;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CuongqShop.Data
 {
@@ -30,7 +24,7 @@ namespace CuongqShop.Data
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<Page> Pages { get; set; }
         public DbSet<Post> Posts { get; set; }
-        public DbSet<PostCategory> postCategories { get; set; }
+        public DbSet<PostCategory> PostCategories { get; set; }
         public DbSet<PostTag> PostTags { get; set; }
         public DbSet<Product> Products { get; set; }
 
