@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CuongqShop.Data.Repositories
 {
-    public interface IPostCategoryRepository
+    public interface IPostCategoryRepository : IRepository<PostCategory>
     {
     }
 

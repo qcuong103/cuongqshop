@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CuongqShop.Data.Repositories
 {
-    public interface IMenuGroupRepository
+    public interface IMenuGroupRepository : IRepository<MenuGroup>
     {
     }
 
@@ -18,5 +18,4 @@ namespace CuongqShop.Data.Repositories
         {
         }
     }
-}
 }
