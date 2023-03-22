@@ -80,10 +80,6 @@
       <Project>{94188b44-f2fd-4586-9849-631bf613c122}</Project>
       <Name>CuongqShop.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CuongqShop.Data\CuongqShop.Data.csproj">
-      <Project>{6eb3f3cd-efc6-43e3-b5b3-291756ca4c1d}</Project>
-      <Name>CuongqShop.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CuongqShop.Service\CuongqShop.Service.csproj">
       <Project>{d351fec0-4fd1-4b7a-9174-29a1541861ad}</Project>
       <Name>CuongqShop.Service</Name>
