@@ -54,10 +54,6 @@
       <Project>{6eb3f3cd-efc6-43e3-b5b3-291756ca4c1d}</Project>
       <Name>CuongqShop.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CuongqShop.Data\CuongqShop.Data.csproj">
-      <Project>{6eb3f3cd-efc6-43e3-b5b3-291756ca4c1d}</Project>
-      <Name>CuongqShop.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CuonqShop.Model\CuongqShop.Model.csproj">
       <Project>{4b38d1fd-47c4-4684-b42f-ff6ae3c03c2e}</Project>
       <Name>CuongqShop.Model</Name>
