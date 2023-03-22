@@ -1,10 +1,5 @@
-﻿using CuonqShop.Model.Models;
-using CuongqShop.Data.infrastructure;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CuongqShop.Data.infrastructure;
+using CuonqShop.Model.Models;
 
 namespace CuongqShop.Data.Repositories
 {

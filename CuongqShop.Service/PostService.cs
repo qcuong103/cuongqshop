@@ -1,9 +1,7 @@
 ﻿using CuongqShop.Data.infrastructure;
 using CuongqShop.Data.Repositories;
 using CuonqShop.Model.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace CuongqShop.Service
 {
@@ -30,15 +28,15 @@ namespace CuongqShop.Service
 
     public class PostService : IPostService
     {
-        IPostRepository _postRepository;
-        IUnitOfWork _unitOfWork;
+        private IPostRepository _postRepository;
+        private IUnitOfWork _unitOfWork;
 
         public PostService(IPostRepository postRepository, IUnitOfWork unitOfWork)
         {
             this._postRepository = postRepository;
             this._unitOfWork = unitOfWork;
-
         }
+
         public void Add(Post post)
         {
             _postRepository.Add(post);
@@ -56,7 +54,7 @@ namespace CuongqShop.Service
 
         public IEnumerable<Post> GetAllByCategoryPaging(int categoryId, int page, int pageSize, out int totalRow)
         {
-            return _postRepository.GetMultiPaging(x => x.Status && x.CategoryID == categoryId, out totalRow, page, pageSize, new string[] {"PostCategory"});
+            return _postRepository.GetMultiPaging(x => x.Status && x.CategoryID == categoryId, out totalRow, page, pageSize, new string[] { "PostCategory" });
         }
 
         public IEnumerable<Post> GetAllByTagPaging(string tag, int page, int pageSize, out int totalRow)

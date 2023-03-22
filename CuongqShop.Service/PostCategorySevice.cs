@@ -1,27 +1,29 @@
 ﻿using CuongqShop.Data.infrastructure;
 using CuongqShop.Data.Repositories;
 using CuonqShop.Model.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CuongqShop.Service
 {
     public interface IPostCategoryService
     {
         void Add(PostCategory postCategory);
+
         void Update(PostCategory postCategory);
+
         void Delete(int id);
+
         IEnumerable<PostCategory> GetAll();
+
         IEnumerable<PostCategory> GetAllByParentId(int parentId);
+
         PostCategory GetById(int id);
     }
+
     public class PostCategorySevice : IPostCategoryService
     {
-        IPostCategoryRepository _postCategoryRepository;
-        IUnitOfWork _unitowork;
+        private IPostCategoryRepository _postCategoryRepository;
+        private IUnitOfWork _unitowork;
 
         public PostCategorySevice(IPostCategoryRepository postCategoryRepository, IUnitOfWork unitofwork)
         {
@@ -46,7 +48,7 @@ namespace CuongqShop.Service
 
         public IEnumerable<PostCategory> GetAllByParentId(int parentId)
         {
-           return  _postCategoryRepository.GetMulti(x=>x.Status && x.ParentID == parentId);
+            return _postCategoryRepository.GetMulti(x => x.Status && x.ParentID == parentId);
         }
 
         public PostCategory GetById(int id)

@@ -1,8 +1,7 @@
 ﻿namespace CuongqShop.Data.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class InitialDB : DbMigration
     {
         public override void Up()
@@ -278,7 +277,6 @@
                     IPAddress = c.String(maxLength: 50),
                 })
                 .PrimaryKey(t => t.ID);
-
         }
 
         public override void Down()

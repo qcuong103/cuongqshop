@@ -12,9 +12,9 @@ namespace CuongqShop.Data.Repositories
 
     public class ProductCategoryRepository : RepositoryBase<ProductCategory>, IProductCategoryRepository
     {
-        public ProductCategoryRepository(IDbFactory dbFactory) 
+        public ProductCategoryRepository(IDbFactory dbFactory)
             : base(dbFactory)
-        { 
+        {
         }
 
         public IEnumerable<ProductCategory> GetByAlias(string alias)

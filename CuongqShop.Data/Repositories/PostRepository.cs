@@ -1,16 +1,13 @@
-﻿using CuonqShop.Model.Models;
-using CuongqShop.Data.infrastructure;
-using System;
+﻿using CuongqShop.Data.infrastructure;
+using CuonqShop.Model.Models;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CuongqShop.Data.Repositories
 {
     public interface IPostRepository : IRepository<Post>
     {
-        IEnumerable<Post> GetAllByTag(string tag,int pageIndex, int pageSize, out int totalRow);
+        IEnumerable<Post> GetAllByTag(string tag, int pageIndex, int pageSize, out int totalRow);
     }
 
     public class PostRepository : RepositoryBase<Post>, IPostRepository

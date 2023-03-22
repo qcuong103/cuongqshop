@@ -1,11 +1,7 @@
 ﻿using CuonqShop.Model.Abtract;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CuonqShop.Model.Models
 {
@@ -26,6 +22,7 @@ namespace CuonqShop.Model.Models
 
         [MaxLength(500)]
         public string Description { set; get; }
+
         public int? ParentID { set; get; }
         public int? DisplayOrder { set; get; }
 

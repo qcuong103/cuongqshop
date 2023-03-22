@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CuongqShop.Data.infrastructure
 {
     public abstract class RepositoryBase<T> where T : class
     {
         #region Properties
+
         private CuongqShopDbContext dataContext;
         private readonly IDbSet<T> dbSet;
 
@@ -21,11 +19,12 @@ namespace CuongqShop.Data.infrastructure
             private set;
         }
 
-        protected CuongqShopDbContext DbContext 
+        protected CuongqShopDbContext DbContext
         {
             get { return dataContext ?? (dataContext = DbFactory.Init()); }
         }
-        #endregion
+
+        #endregion Properties
 
         protected RepositoryBase(IDbFactory dbFactory)
         {
@@ -34,6 +33,7 @@ namespace CuongqShop.Data.infrastructure
         }
 
         #region Implementation
+
         public virtual void Add(T entity)
         {
             dbSet.Add(entity);
@@ -72,7 +72,6 @@ namespace CuongqShop.Data.infrastructure
         {
             return dbSet.Where(where).ToList();
         }
-
 
         public virtual int Count(Expression<Func<T, bool>> where)
         {
@@ -139,6 +138,7 @@ namespace CuongqShop.Data.infrastructure
         {
             return dataContext.Set<T>().Count<T>(predicate) > 0;
         }
-        #endregion
+
+        #endregion Implementation
     }
 }
