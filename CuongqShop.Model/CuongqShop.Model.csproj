@@ -8,8 +8,8 @@
     <ProjectGuid>{4B38D1FD-47C4-4684-B42F-FF6AE3C03C2E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CuonqShop.Model</RootNamespace>
-    <AssemblyName>CuonqShop.Model</AssemblyName>
+    <RootNamespace>CuongqShop.Model</RootNamespace>
+    <AssemblyName>CuongqShop.Model</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

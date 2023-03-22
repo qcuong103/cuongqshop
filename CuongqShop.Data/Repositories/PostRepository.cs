@@ -1,5 +1,5 @@
 ﻿using CuongqShop.Data.infrastructure;
-using CuonqShop.Model.Models;
+using CuongqShop.Model.Models;
 using System.Collections.Generic;
 using System.Linq;
 

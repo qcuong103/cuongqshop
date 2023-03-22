@@ -1,4 +1,4 @@
-﻿using CuonqShop.Model.Models;
+﻿using CuongqShop.Model.Models;
 using System.Data.Entity;
 
 namespace CuongqShop.Data

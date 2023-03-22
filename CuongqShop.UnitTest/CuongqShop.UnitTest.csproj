@@ -88,7 +88,7 @@
       <Project>{7f04484b-d29c-4bb6-b068-66cdb63afe64}</Project>
       <Name>CuongqShop.Web</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CuonqShop.Model\CuongqShop.Model.csproj">
+    <ProjectReference Include="..\CuongqShop.Model\CuongqShop.Model.csproj">
       <Project>{4b38d1fd-47c4-4684-b42f-ff6ae3c03c2e}</Project>
       <Name>CuongqShop.Model</Name>
     </ProjectReference>

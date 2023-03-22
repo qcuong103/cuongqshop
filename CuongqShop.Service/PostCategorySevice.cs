@@ -1,6 +1,6 @@
 ﻿using CuongqShop.Data.infrastructure;
 using CuongqShop.Data.Repositories;
-using CuonqShop.Model.Models;
+using CuongqShop.Model.Models;
 using System.Collections.Generic;
 
 namespace CuongqShop.Service
