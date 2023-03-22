@@ -152,6 +152,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="infrastucture\Core\ApiControllerBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -169,7 +170,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Assets\admin\" />
     <Folder Include="Assets\client\" />
-    <Folder Include="infrastucture\Core\" />
     <Folder Include="infrastucture\Extentions\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\plugins\" />

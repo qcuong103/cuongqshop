@@ -1,10 +1,13 @@
-﻿using CuongqShop.Web.infrastucture.Core;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Web.Http;
 
-namespace CuongqShop.Web.Api
+namespace CuongqShop.Web.infrastucture.Core
 {
-    public class PostCategoryController : ApiControllerBase
+    public class ApiControllerBase : ApiController
     {
         // GET api/<controller>
         public IEnumerable<string> Get()
