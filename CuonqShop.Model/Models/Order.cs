@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CuonqShop.Model.Models
 {
@@ -37,7 +34,6 @@ namespace CuonqShop.Model.Models
 
         public DateTime? CreatedDate { get; set; }
         public string CreatedBy { get; set; }
-        //public string PaymentMethod { get; set; }
         public string PaymentStatus { get; set; }
         public bool Status { get; set; }
 

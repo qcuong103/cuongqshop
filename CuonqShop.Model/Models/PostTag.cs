@@ -1,25 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CuonqShop.Model.Models
 {
     [Table("PostTags")]
-    public class PostTags
+    public class PostTag
     {
         [Key]
-        public int PostID { get; set; }
+        [Column(Order = 1)]
+        public int PostID { set; get; }
+
         [Key]
-        public string TagsID { get; set; }
+        [Column(TypeName = "varchar", Order = 2)]
+        [MaxLength(50)]
+        public string TagID { set; get; }
 
         [ForeignKey("PostID")]
-        public virtual Post Post { get; set; }
+        public virtual Post Post { set; get; }
 
-        [ForeignKey("TagsID")]
-        public virtual Tags Tags { get; set; }
+        [ForeignKey("TagID")]
+        public virtual Tag Tag { set; get; }
     }
 }

@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CuonqShop.Model.Models
 {
@@ -12,17 +7,18 @@ namespace CuonqShop.Model.Models
     public class ProductTag
     {
         [Key]
-        public int ProductID { get; set; }
+        [Column(Order = 1)]
+        public int ProductID { set; get; }
 
         [Key]
-        [Column(TypeName = "varchar")]
+        [Column(TypeName = "varchar", Order = 2)]
         [MaxLength(50)]
-        public string TagsID { get; set; }
+        public string TagID { set; get; }
 
         [ForeignKey("ProductID")]
-        public virtual Product Product { get; set; }
+        public virtual Product Product { set; get; }
 
-        [ForeignKey("TagsID")]
-        public virtual Tags Tag { get; set; }
+        [ForeignKey("TagID")]
+        public virtual Tag Tag { set; get; }
     }
 }

@@ -4,18 +4,14 @@ namespace CuonqShop.Model.Abtract
 {
     public interface IAuditable
     {
-        DateTime? CreatedDate { get; set; }
+        DateTime? CreatedDate { set; get; }
+        string CreatedBy { set; get; }
+        DateTime? UpdatedDate { set; get; }
+        string UpdatedBy { set; get; }
 
-        string CreatedBy { get; set; }
+        string MetaKeyword { set; get; }
+        string MetaDescription { set; get; }
 
-        DateTime? UpdateDate { get; set; }
-
-        string UpdateBy { get; set; }
-
-        string MetaKeywork { get; set; }
-
-        string MetaDescription { get; set; }
-
-        bool Status { get; set; }
+        bool Status { set; get; }
     }
 }
