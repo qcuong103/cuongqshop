@@ -52,6 +52,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CuongqShopDbContext.cs" />
+    <Compile Include="infrastructure\DbFactory.cs" />
+    <Compile Include="infrastructure\Disposable.cs" />
+    <Compile Include="infrastructure\IDbFactory.cs" />
+    <Compile Include="infrastructure\IRepository.cs" />
+    <Compile Include="infrastructure\IUnitOfWork.cs" />
+    <Compile Include="infrastructure\RepositoryBase.cs" />
+    <Compile Include="infrastructure\UnitOfWork.cs" />
+    <Compile Include="Migrations\202303161023577_InitialDB.cs" />
+    <Compile Include="Migrations\202303161023577_InitialDB.designer.cs">
+      <DependentUpon>202303161023577_InitialDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\FooterRepository.cs" />
     <Compile Include="Repositories\MenuGroupRepository.cs" />
